@@ -1,0 +1,46 @@
+{
+  "name": "react-copyright",
+  "description": "A react-component to format and display a copyright notice.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jasonbellamy/react-copyright",
+  "author": {
+    "name": "Jason Bellamy",
+    "email": "j@sonbellamy.com",
+    "url": "http://jasonbellamy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonbellamy/react-copyright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonbellamy/react-copyright/issues"
+  },
+  "license": "MIT",
+  "main": "dist/react-copyright",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist",
+    "build-dist": "babel -d dist src",
+    "build-watch": "babel -w -d dist src",
+    "build": "npm run clean && npm run build-dist",
+    "watch": "npm run clean && npm run build-watch",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "dependencies": {
+    "react-year": "0.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.2.15",
+    "core-js": "^0.9.6",
+    "react": "^0.13.3"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "copyright",
+    "year",
+    "date"
+  ]
+}
